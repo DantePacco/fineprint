@@ -10,7 +10,6 @@
 <meta property="og:title" content="In 2026, swallowing the pill costs you the WEEKEND.">
 <meta property="og:description" content="A tablet that melts under your tongue can work in about 15 minutes or less for some men, and one dose can last 24 to 36 hours.">
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#121513" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,12 +30,9 @@
   --serif:"Source Serif 4","Tiempos Text",Georgia,"Times New Roman",serif;
   --sans:"Instrument Sans","Helvetica Neue",Arial,system-ui,sans-serif;
   --measure:680px; --breakout:880px; --unit:8px;
-  --body-size:20px; --body-lh:1.65; --h1-size:52px; --sub-size:22px; --h2-size:30px; --h3-size:23px; --deck-size:22px; --ui-size:15px; --caption-size:14px;
+  color-scheme:light;
+  --body-size:21px; --body-lh:1.65; --h1-size:52px; --sub-size:22px; --h2-size:30px; --h3-size:23px; --deck-size:22px; --ui-size:15px; --caption-size:14px;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){ --ink:#ECEFED; --ink-2:#B9C0BC; --ink-3:#8B938F; --paper:#121513; --mist:#1C201E; --mist-2:#2A302D; --signal:#3FBF8F; --signal-ink:#5FD3A8; --alarm:#E8664A; --alarm-tint:#3A1F19; --hilite:#4A4116; --hyband:#2E3431; }
-}
-:root[data-theme="dark"]{ --ink:#ECEFED; --ink-2:#B9C0BC; --ink-3:#8B938F; --paper:#121513; --mist:#1C201E; --mist-2:#2A302D; --signal:#3FBF8F; --signal-ink:#5FD3A8; --alarm:#E8664A; --alarm-tint:#3A1F19; --hilite:#4A4116; --hyband:#2E3431; }
 @media (max-width:640px){
   :root{ --body-size:18px; --body-lh:1.6; --h1-size:36px; --sub-size:17px; --h2-size:26px; --h3-size:21px; --deck-size:19px; }
 }
@@ -180,14 +176,15 @@ mark{background:var(--hilite);color:inherit;padding:0 .15em;border-radius:3px;bo
 .photo img{display:block;width:100%;height:auto;border-radius:8px;background:var(--mist)}
 .photo.organ img{max-width:420px;margin:0 auto;background:#000}
 .photo.organ.wide img{max-width:100%}
+.photo.hero{margin-top:calc(var(--unit)*3);margin-bottom:calc(var(--unit)*4)}
 .photo.organ figcaption{text-align:center;margin-left:auto;margin-right:auto}
 .photo figcaption b{color:var(--ink-2)}
-.photo figcaption{font-family:var(--sans);font-size:14px;line-height:1.45;color:var(--ink-3);margin-top:8px;max-width:var(--measure)}
-.cite{display:block;margin-top:6px;font-family:var(--sans);font-size:13px;line-height:1.4;color:var(--ink-3)}
+.photo figcaption{font-family:var(--sans);font-size:16px;line-height:1.45;color:var(--ink-2);margin-top:8px;max-width:var(--measure)}
+.cite{display:block;margin-top:6px;font-family:var(--sans);font-size:15px;line-height:1.4;color:var(--ink-3)}
 .cite a{color:var(--ink-3)}
-.research{font-family:var(--sans);font-size:13px;line-height:1.5;color:var(--ink-3);margin:calc(var(--unit)*-3.5) 0 calc(var(--unit)*5)}
+.research{font-family:var(--sans);font-size:15px;line-height:1.5;color:var(--ink-3);margin:calc(var(--unit)*-3.5) 0 calc(var(--unit)*5)}
 .research b{color:var(--ink-2);font-weight:600}
-.sources{margin-top:calc(var(--unit)*6);font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-2)}
+.sources{margin-top:calc(var(--unit)*6);font-family:var(--sans);font-size:16px;line-height:1.5;color:var(--ink-2)}
 .sources p{font-weight:700;color:var(--ink);margin:0 0 8px}
 .sources ol{padding-left:1.3em;margin:0}
 .sources li{margin-bottom:6px}
@@ -218,6 +215,11 @@ footer a{color:var(--ink-3)}
   <!-- ===== BEAT 1 · HOOK ===== -->
   <p class="kicker">Men's Health Notes</p>
   <h1>In 2026, swallowing the pill costs you the WEEKEND.</h1>
+
+  <figure class="photo organ wide hero">
+    <img src="directmax/compare.jpg" alt="3D X-ray illustration of the male organ side by side, soft and small on the left, very hard and straight on the right" width="1200" height="1069">
+    <figcaption>On the left, soft, and she's already asleep. On the right, hard, and ready the minute she is.</figcaption>
+  </figure>
   <p class="subhead">Stick with me, and I'll show you how you can be ready the minute she is, from Friday night into Sunday morning, without planning a thing.</p>
   <p class="deck">A tablet that melts under your tongue can now work in about 15 minutes or less for some men, and one dose can last 24 to 36 hours.<br><br><strong>BUT :</strong> if you still swallow a pill and wait for it, you're planning sex like a dentist appointment, and she notices every time you glance at the clock.<br><br><mark>Every planned night that falls flat teaches her one thing: stop reaching for him. After enough of those nights, she stops.</mark><br><br><strong>The good news :</strong> it's an easy fix. In a trial of 348 men, 36 hours after one dose of tadalafil, the long-lasting ingredient, men had sex successfully twice as often as men on a placebo.<br><br><strong>Below I'll break down the 3 changes. No waiting room, no pharmacy line, and nobody you know ever has to hear about it.</strong></p>
 
@@ -233,11 +235,6 @@ footer a{color:var(--ink-3)}
     </div>
   </div>
   <p class="research">The research in this note: <b>Journal of Urology</b> · <b>Urology</b> · <b>Journal of Sexual Medicine</b> · sources at the end</p>
-
-  <figure class="photo organ wide">
-    <img src="directmax/compare.jpg" alt="3D X-ray illustration of the male organ side by side: before, soft and small on the left; after, hard and big on the right" width="1200" height="1069">
-    <figcaption><b>Before and after.</b> On the left, soft, and she's already asleep. On the right, hard, and ready the minute she is.</figcaption>
-  </figure>
 
   <!-- ===== BEAT 2 · THE PROMISE LADDER ===== -->
   <p><strong><mark>The whole difference comes from 3 changes in how you take it, not in how hard you try.</mark></strong></p>
